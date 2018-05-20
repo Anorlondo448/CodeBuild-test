@@ -1,0 +1,13 @@
+version: 0.2
+ 
+phases:
+  install:
+    commands:
+      - pip install --upgrade pip
+      - pip install --upgrade awscli
+      - pip install --upgrade boto3      
+  build:
+    commands:
+      - pwd
+      - ls -l
+      - python ./test.py
